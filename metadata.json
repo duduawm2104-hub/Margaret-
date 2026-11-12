@@ -1,0 +1,6 @@
+{
+  "name": "Margaret's Little Guide to Everyday Wellness",
+  "description": "Discover 30 comforting homemade recipes, timeless life lessons, gentle routines, and everyday kitchen wisdom in an 80-page digital e-book by Margaret.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: "Caveat", cursive;
+
+  --color-ivory: #F7F1E5;
+  --color-cream: #FFF9EF;
+  --color-olive-deep: #353D22;
+  --color-olive-muted: #69724C;
+  --color-sage: #A6AD8B;
+  --color-beige: #E9DCC7;
+  --color-brown-soft: #80624A;
+  --color-text-main: #302D25;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-text-main);
+    background-color: var(--color-ivory);
+  }
+}
+
+/* Realistic 3D Book perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Subtle paper texture overlay */
+.paper-texture {
+  background-image: radial-gradient(rgba(53, 61, 34, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F1E5;
+}
+::-webkit-scrollbar-thumb {
+  background: #A6AD8B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #69724C;
+}
